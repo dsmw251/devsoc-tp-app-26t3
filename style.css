@@ -1,13 +1,13 @@
 body {
     font-family: system-ui, sans-serif;
-    background: #f5f5f5;
-    color: #111;
+    background: #FFF44F;
+    color: #191970;
     transition: background 0.4s, color 0.4s;
 }
 
 body.dark {
-    background: #111;
-    color: #f5f5f5;
+    background: hsl(240, 64%, 27%);
+    color: #FFF44F;
 }
 
 .box {
