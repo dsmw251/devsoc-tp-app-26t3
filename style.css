@@ -14,3 +14,20 @@ body.dark {
     padding: 20px;
     border: 1px solid currentColor;
 }
+
+button {
+    background: transparent;
+    color: inherit;
+    border: 1px solid currentColor;
+    padding: 8px 16px;
+    /* 8px top and bottom, 16px left and right*/
+
+    /*
+    padding: 10px;                 all four sides 
+    padding: 8px 16px;             top/bottom, left/right 
+    padding: 8px 16px 12px;        top, left/right, bottom
+    padding: 8px 16px 12px 4px;    top, right, bottom, left
+    */
+    cursor: pointer;
+    transition: background 0.4s, color 0.4s;
+}
