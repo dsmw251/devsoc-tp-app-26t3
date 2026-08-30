@@ -11,9 +11,11 @@ body {
 }
 
 body.dark {
-    background: hsl(240, 64%, 27%);
+    background-color: hsl(240, 64%, 27%);
+    background-image: url("images/night.jpg");
     color: #FFF44F;
 }
+
 
 .box {
     padding: 20px;
