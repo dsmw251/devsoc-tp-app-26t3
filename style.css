@@ -1,6 +1,11 @@
 body {
     font-family: system-ui, sans-serif;
-    background: #FFF44F;
+    background-color: #FFF44F;
+    background-image: url("images/day.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+    background-attachment: fixed; 
     color: #191970;
     transition: background 0.4s, color 0.4s;
 }
@@ -30,4 +35,35 @@ button {
     */
     cursor: pointer;
     transition: background 0.4s, color 0.4s;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-right: 1px solid currentColor;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.nav-link.current {
+    font-weight: bold;
 }
