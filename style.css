@@ -50,15 +50,16 @@ button {
     padding: 20px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
-    border-right: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    background-color: inherit;
 }
 
 main {
-    flex: 1;
+    /* flex: 1; */
     padding: 20px;
-    align-self: flex-start;
+    /* align-self: flex-start; */
 }
 
 .page {
@@ -81,6 +82,35 @@ body:not(.dark) .page.active {
     font-weight: bold;
 }
 
-.sidebar {
-    background-color: inherit;
+.nav-link:hover {
+    background-color: #FFF44F;
+    color: hsl(240, 64%, 27%);
+}
+
+body:not(.dark) .nav-link:hover {
+    background-color: #191970;
+    color: #FFF44F;
+}
+
+.theme-btn {
+    margin-left: auto;
+}
+
+.theme-btn:hover {
+    background-color: #FFF44F;
+    color: hsl(240, 64%, 27%);
+}
+
+body:not(.dark) .theme-btn:hover {
+    background-color: #191970;
+    color: #FFF44F;
+}
+
+li img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin-top: 10px;
 }
