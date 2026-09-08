@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: system-ui, sans-serif;
     background-color: #FFF44F;
@@ -75,7 +79,7 @@ main {
 }
 
 body:not(.dark) .page.active {
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.85);
 }
 
 .nav-link.current {
