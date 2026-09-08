@@ -63,7 +63,10 @@ button {
 main {
     /* flex: 1; */
     padding: 20px;
-    /* align-self: flex-start; */
+    /* Padding is space inside an element, between its content
+    and its border
+    Margin is outside the border 
+    */
 }
 
 .page {
@@ -118,11 +121,17 @@ body:not(.dark) .theme-btn:hover {
     color: #FFF44F;
 }
 
-li img {
+img {
     max-width: 400px;
     width: 100%;
     height: auto;
     border-radius: 8px;
     display: block;
     margin-top: 10px;
+    align-self: center;
+    /*
+    align-self can take same values as align-items
+    align-items goes on flex container and sets default for the children
+    align-self goes on an individual child and overrides the default
+    */
 }
