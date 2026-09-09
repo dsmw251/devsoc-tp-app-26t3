@@ -136,6 +136,17 @@ img {
     */
 }
 
+.img-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.img-row img {
+    flex: 0 1 auto;
+    max-width: 300px;
+}
+
 footer {
     margin-top: auto;
     padding: 20px;
