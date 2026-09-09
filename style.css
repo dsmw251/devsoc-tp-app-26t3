@@ -135,3 +135,21 @@ img {
     align-self goes on an individual child and overrides the default
     */
 }
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* gap between logos */
+    border-top: 1px solid currentColor;
+    background-color: inherit;
+    /* This will inherit the colour based on the main */
+}
+
+footer img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
