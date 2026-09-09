@@ -17,6 +17,7 @@ body {
 body.dark {
     background-color: hsl(240, 64%, 27%);
     background-image: url("images/night.jpg");
+    /*remember to use url*/
     color: #FFF44F;
 }
 
@@ -139,13 +140,14 @@ img {
 .img-row {
     display: flex;
     gap: 12px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .img-row img {
-    flex: 0 1 auto;
+    flex: 1;
     width: auto;
-    max-width: 300px;
+    min-width: 0;
+    max-width: none;
 }
 
 footer {
@@ -164,4 +166,5 @@ footer img {
     width: 28px;
     height: 28px;
     object-fit: contain;
+    /*contain ensures the logo fits within the footer img size constraints*/
 }
